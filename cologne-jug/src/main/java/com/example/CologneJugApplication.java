@@ -13,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 
+import com.vaadin.annotations.Theme;
 import com.vaadin.data.Binder;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
@@ -49,6 +50,7 @@ class DataGenerator implements CommandLineRunner {
 }
 
 @SpringUI
+@Theme("cologne-jug-theme")
 class MyUI extends UI {
 
 	@Autowired
